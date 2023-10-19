@@ -26,9 +26,11 @@ border-bottom: 1px solid #e7e9fc;
 }
 
 .container {
-width: 1158px;
-margin: 0 auto;
-padding: 0 15px
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-header {
@@ -210,20 +212,23 @@ overflow: hidden;
 }
 
 .main-description-list {
+    width: 320px;
 display: flex;
-gap: 24px;
+flex-direction: column;
+gap: 72px;
+margin: 0 auto;
 }
 
-.main-direction-image {
+/* .main-direction-image {
 display: flex;
 align-items: center;
 justify-content: center;
-width: width: calc((100% - 72px) / 4);
+width: calc((100% - 72px) / 4);
 height: 112px;
 background-color: #f4f4fd;
 border-radius: 4px;
 margin-bottom: 8px;
-}
+} */
 
 .main-description-subtitle {
 font-weight: 500;
@@ -794,4 +799,55 @@ cursor: pointer;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     }
 
+    @media screen and (min-width:768px) {
+        .container {
+            max-width: 768px;
+            padding-left: 16px;
+            padding-right: 16px;
+            }
+        
+        .main-description-list {
+                width: 768px;
+                display: ;
+                grid-template-columns: 1fr 1fr;
+                gap: 72px 24px;
+               
+                }
+
+        .main-description-list-item{
+            width: calc((100% - 24px) / 2);
+        }
+        
+    }
     
+    @media screen and (min-width:1158px) {
+        .container {
+            max-width: 1158px;
+            padding-left: 15px;
+            padding-right: 15px;
+            
+            }
+
+        .main-description-list {
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            gap: 24px;
+                }
+
+        .main-description-list-item{
+            width: calc((100% - 72px) / 4);
+        }
+        .main-direction-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: calc((100% - 72px) / 4);
+            height: 112px;
+            background-color: #f4f4fd;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            } 
+    }
