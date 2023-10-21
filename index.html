@@ -48,7 +48,7 @@
             </section>
        
       <!--=========================  DESCRIPTION  ========================-->   
-            <!-- <section class="main-description">
+            <section class="main-description">
                 <div class="container">
                     <h2 class="visually-hidden">advantages</h2>
                          <ul class="main-description-list">
@@ -102,13 +102,13 @@
                         </ul>
                 </div>
             </section>
-         -->
+         
     <!--=========================  HERO  ==============================-->  
             <section class="main-hero">
                 <div class="container">
                     <h2 class="main-hero-title">Our Team</h2>
                         <ul class="main-hero-list">
-                            <li  class="main-hero-item"><img src="./images/img.jpg" alt="photo" 
+                            <li  class="main-hero-item"><img srcset="./images/img.jpg 1x, ./images/img-Mark2x@2x.jpg 2x" src="./images/img.jpg" alt="photo" 
                                 width="264" class="main-hero-image">
                                     <div class="main-hero-name-position">
                                         <h3 class="main-hero-subtitle">Mark Guerrero</h3>
@@ -145,7 +145,7 @@
                                         </ul>
                                     </div>
                             </li>
-                            <li class="main-hero-item"><img src="./images/img2.jpg" alt="photo"
+                            <li class="main-hero-item"><img srcset="./images/img2.jpg 1x, ./images/img-Tom2x@2x.jpg 2x" src="./images/img2.jpg" alt="photo"
                                  width="264" class="main-hero-image">
                                     <div class="main-hero-name-position">
                                         <h3 class="main-hero-subtitle">Tom Ford</h3>
@@ -182,7 +182,7 @@
                                         </ul>
                                     </div>
                             </li>
-                            <li class="main-hero-item"><img src="./images/img3.jpg" alt="photo"
+                            <li class="main-hero-item"><img srcset="./images/img3.jpg 1x, ./images/img-Camila2x@2x.jpg 2x" src="./images/img3.jpg" alt="photo"
                                 width="264" class="main-hero-image">
                                     <div class="main-hero-name-position">
                                         <h3 class="main-hero-subtitle">Camila Garcia</h3>
@@ -219,7 +219,7 @@
                                         </ul>
                                     </div>
                             </li>
-                            <li class="main-hero-item"><img src="./images/img1.jpg" alt="photo"
+                            <li class="main-hero-item"><img srcset="./images/img1.jpg 1x, ./images/img-Danil2x@2x.jpg 2x" src="./images/img1.jpg" alt="photo"
                                 width="264" class="main-hero-image">
                                     <div class="main-hero-name-position">
                                         <h3 class="main-hero-subtitle">Daniel Wilson</h3>
@@ -351,7 +351,7 @@
                 </p>
             </div>
             <div class="container-two-footer">
-                <p class="footer-text">Social media</p>
+                <p class="footer-two-title">Social media</p>
                 <ul class="footer-social-link-list">
                     <li class="footer-social-link-item">
                         <a class="footer-social-link" href="" target="_blank" rel="">
@@ -384,15 +384,18 @@
                 </ul>
             </div>
             <div class="footer-subscribe">
-                <p class="paragraph-subscribe">Subscribe</p>
-                <form class="form" name="subscribe">
-                    <label class="form-label">
+                <div class="footer-paragraph-subscribe">
+                    <p class="paragraph-subscribe">Subscribe</p>
+                    <form class="form" name="subscribe">
+                        <label class="form-label">
                         <input
                         class="form-input"
                         type="email"
                         name="email"
                         placeholder="E-mail">
-                    </label>
+                        </label>
+
+                </div>
                     <button type="submit" class="form-button">Subscribe
                         <svg class="footer-button-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-Frame"></use>
