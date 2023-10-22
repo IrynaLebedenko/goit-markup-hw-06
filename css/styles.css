@@ -897,10 +897,22 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             margin-bottom: auto;
         }
 
-        .header-address {
+        .header-address{
             display: flex;
+        }
+
+        .header-address-link {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            margin-left: 120px;
             
             
+        }
+
+        .header-address-contact-link {
+            padding-top: 0;
+            padding-bottom: 0;
         }
             @media (min-resolution: 192dpi) {
                 .main-goal {
@@ -1013,7 +1025,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             .container-header {
                 width: 100%;
                 padding-left: 156px;
-                padding-right: 0;
+                padding-right: 156px;
             }
 
             .header-address {
