@@ -40,7 +40,7 @@ display: flex;
 /* gap: 332px; */
 padding-top: 16px;
 padding-bottom: 16px;
-margin-left: 0;
+
 
 
 }
@@ -168,26 +168,119 @@ justify-content: center;
     
 }
 
+.mob-menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 24px 24px 40px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: auto;
+    
+}
+
+.mob-menu-btn {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 24px;
+    border-radius: 50%;
+    border-color: rgba(231, 233, 252, 1);
+    
+}
+.mob-menu-btn-ikon {
+}
+.mob-menu-link {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 168px;
+}
+
+.mob-menu-link-item {
+    color:  rgba(46, 47, 66, 1);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    
+}
+.mob-menu-link-item-one {
+    
+
+}
+.mob-menu-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background:  #4d5ae5;  
+}
+.current-mob-menu-link-item {
+    color: #4d5ae5;
+}
+
+.mob-menu-address {
+   margin-top: auto;
+   margin-bottom: 48px;
+}
+.mob-menu-address-link {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+.mob-menu-address-link-item {
+    
+}
+.mob-menu-address-contact-link {
+    color: rgba(46, 47, 66, 1);
+}
+
+.current-mob-menu-address-contact-link {
+    color: #4d5ae5;
+}
+.mob-menu-social-link-list {
+    gap: 40px;
+    margin-top: auto;
+}
+.mob-menu-social-link-item {
+}
+.mob-menu-soc-ikon {
+    fill: #f4f4fd;
+}
+
 .main {
 }
 
 .main-goal {
 background-color: #2e2f42;
-padding: 188px 0;
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url( ../images/people-office.jpg);
+padding: 72px 0;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url( ../images/people-office1x-mob.jpg);
 
-max-width: 1440px;
+/* max-width: 1440px; */
 background-repeat: no-repeat;
 background-position: center center;
 background-size: cover;
 /* margin: 0 auto; */
 }
 
-@media (min-resolution: 192dpi) {
-    .main-goal {
+@media (min-device-pixel-ratio: 2),              (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url( ../images/people-office2x-mob.jpg);
     }
-  }
+  
 
 .main-goal-title {
 text-align: center;
@@ -391,6 +484,7 @@ fill: #f4f4fd;
 .main-portfolio {
  padding-top: 120px; 
  padding-bottom: 120px; 
+margin: 0 auto;
 }
 
 .main-portfolio-title {
@@ -407,8 +501,12 @@ margin-bottom: 72px;
 .container-main-portfolio-list{
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
 row-gap: 48px;
+width: 100%;
 margin: 0 auto;
+padding-right: 24px;
+padding-left: 24px;
 }
 
 
@@ -670,8 +768,9 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-padding: 24px;
-width: 408px;
+padding: 16px;
+width: 288px;
+height: 623px;
 min-height: 584px;
 border-radius: 4px;
 background: #fcfcfc;
@@ -722,7 +821,7 @@ fill: #ffffff;
 }
 
 .modal-title {
-width: 360px;
+width: 100%;
 height: 24px;
 margin-bottom: 16px;
 font-size: 16px;
@@ -868,7 +967,7 @@ background-color: rgba(77, 90, 229, 1);
 color: #ffffff;
 display: block;
 border: none;
-margin: 24px 96px;
+margin: 24px auto;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
@@ -888,8 +987,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         .container-header {
           align-items: center; 
-          /* width: 100%; */
-          margin: 0;
+          padding-top: 0;
+          padding-bottom: 0;
         }
 
         .header-logo {
@@ -914,7 +1013,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             padding-top: 0;
             padding-bottom: 0;
         }
-            @media (min-resolution: 192dpi) {
+
+        .main-goal {
+            padding: 112px 0;
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url( ../images/people-office.jpg);
+        }
+
+            @media (min-device-pixel-ratio: 2),              (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
                 .main-goal {
                   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url( ../images/people-office2x.jpg);
                 }
@@ -1005,15 +1111,25 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .paragraph-subscribe {
-           text-align: left;
+             text-align: left;
         }
 
         .form-button {
             margin-left: 24px;
             margin-top: 40px;
         }
+
+        .modal {
+            padding-right: 25px;
+            padding-left: 23px;
+            width: 408px;
+            height: 584px;
+        }
         
-    }
+        .br {
+            display: none;
+        }
+    
     
     @media screen and (min-width: 1158px) {
         .container {
@@ -1024,13 +1140,23 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             }
             .container-header {
                 width: 100%;
-                padding-left: 156px;
-                padding-right: 156px;
+                /* padding-left: 16px;
+                padding-right: 16px; */
             }
 
             .header-address {
                 margin-right: 0;
                 margin-left: auto;
+              
+            }
+
+            .header-address-link {
+                flex-direction: row;
+                gap: 40px;
+            }
+
+            .main-goal {
+                padding: 188px 0;
             }
 
 
@@ -1104,5 +1230,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .container-one-footer {
         margin-right: 120px;
+    }
+
+    .modal {
+        padding-right: 24px;
+        padding-left: 24px;
     }
 }

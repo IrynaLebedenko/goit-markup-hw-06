@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
 
 </head>
@@ -43,7 +44,62 @@
                             </li>
                         </ul>
                 </address>
-                
+            </div>
+            <!-- ===============MOB MENU============== -->
+            <div class="mob-menu is-open">
+                <div>
+                    <button type="button" class="mob-menu-btn">
+                        <svg class="mob-menu-btn-ikon" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <ul class="mob-menu-link">
+                        <li class="mob-menu-link-item mob-menu-link-item-one"><a class="mob-menu-social-link-text current-mob-menu-link-item" href="./index.html" >Studio</a>
+                        </li>
+                        <li class="mob-menu-link-item"><a class="mob-menu-social-link-text" href="" >Portfolio</a>
+                        </li>
+                        <li class="mob-menu-link-item"><a class="mob-menu-social-link-text" href="" >Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <address class="mob-menu-address">
+                    <ul class="mob-menu-address-link"> 
+                        <li ><a class="mob-menu-address-contact-link current-mob-menu-address-contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="mob-menu-address-link-item"><a class="mob-menu-address-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="mob-menu-social-link-list">
+                    <li class="mob-menu-social-link-item">
+                        <a class="mob-menu-social-link" href="" target="_blank" rel="">
+                            <svg class="mob-menu-soc-ikon" width="16" height="16" >
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                             </svg>
+                        </a>
+                    </li>
+                    <li class="mob-menu-social-link-item">
+                        <a class="mob-menu-social-link" href="" target="_blank" rel="">
+                            <svg class="mob-menu-soc-ikon" width="16" height="16" >
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                         </a>
+                    </li>
+                    <li class="mob-menu-social-link-item">
+                        <a class="mob-menu-social-link" href="" target="_blank" rel="">
+                            <svg class="mob-menu-soc-ikon" width="16" height="16" >
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-menu-social-link-item">
+                        <a class="mob-menu-social-link" href="" target="_blank" rel="">
+                            <svg class="mob-menu-soc-ikon" width="16" height="16" >
+                                <use href="./images/icons.svg#icon-linkedin2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </header>
     <!--=========================  GOAL  ==============================--> 
@@ -415,14 +471,23 @@
         </div>
     </footer>
     <!--=========================  MODAL  ==============================--> 
-    <div class="backdrop">
+    <!-- <div class="backdrop">
+        <div class="modal-menu">
+            <button type="button" class="modal-btn">
+                <svg class="modal-btn-ikon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button> 
+        </div>
+    </div> -->
+    <div class="backdrop ">
         <div class="modal">
             <button type="button" class="modal-btn">
                 <svg class="modal-btn-ikon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
-            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <p class="modal-title">Leave your contacts and we will<br class="br"> call you back</p>
             <form class="modal-form">
                 <div class="modal-field">
                     <label for="user-name" class="modal-form-label-one">Name</label>
